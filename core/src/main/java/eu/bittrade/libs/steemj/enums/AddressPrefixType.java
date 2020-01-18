@@ -11,5 +11,7 @@ public enum AddressPrefixType {
     /** The Steem test net address prefix */
     TST,
     /** The https://testnet.steem.vc test net prefix */
-    STX
+    STX,
+    
+    SRY
 }

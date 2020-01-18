@@ -19,5 +19,7 @@ public enum AssetSymbolType {
     /** Steem Backed Dollar Symbol for the test network */
     TBD,
     /** Steem Dollar Symbol for the test network */
-    TSTD
+    TSTD,
+    
+    SEREY
 }

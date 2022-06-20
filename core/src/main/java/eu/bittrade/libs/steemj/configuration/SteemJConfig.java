@@ -137,7 +137,7 @@ public class SteemJConfig {
         this.validationsToSkip = new ArrayList<>();
         this.synchronizationLevel = SynchronizationType.FULL;
         this.dollarSymbol = LegacyAssetSymbolType.SBD;
-        this.tokenSymbol = LegacyAssetSymbolType.STEEM;
+        this.tokenSymbol = LegacyAssetSymbolType.SEREY;
         this.vestsSymbol = LegacyAssetSymbolType.VESTS;
 
         // Fill the key store with the provided accountName and private keys.

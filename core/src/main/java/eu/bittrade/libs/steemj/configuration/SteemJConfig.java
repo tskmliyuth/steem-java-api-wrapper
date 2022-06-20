@@ -52,9 +52,9 @@ import eu.bittrade.libs.steemj.protocol.enums.LegacyAssetSymbolType;
 public class SteemJConfig {
     private static final Logger LOGGER = LoggerFactory.getLogger(SteemJConfig.class);
     /** The endpoint URI used by default. */
-    private static final String DEFAULT_STEEM_API_URI = "https://api.steemit.com";
+    private static final String DEFAULT_STEEM_API_URI = "https://testnet-api.serey.io";
     /** The SteemJ account. */
-    private static final AccountName STEEMJ_ACCOUNT = new AccountName("steemj");
+    private static final AccountName STEEMJ_ACCOUNT = new AccountName("serey");
     /** The SteemJ version. */
     private static final String STEEMJ_VERSION = SteemJ.class.getPackage().getImplementationVersion();
     /** The SteemJ App-Name */
@@ -117,7 +117,7 @@ public class SteemJConfig {
 
         try {
             this.endpointURIs = new ArrayList<>();
-            this.addEndpointURI(new URI(DEFAULT_STEEM_API_URI));
+            this.addEndpointURI(new URI("https://testnet-api.serey.io"));
         } catch (URISyntaxException e) {
             // This can never happen!
             LOGGER.error("At least one of the configured default URIs has a Syntax error.", e);
@@ -131,8 +131,8 @@ public class SteemJConfig {
         this.timeZoneId = "GMT";
         this.encodingCharset = StandardCharsets.UTF_8;
         this.privateKeyStorage = new PrivateKeyStorage();
-        this.addressPrefix = AddressPrefixType.STM;
-        this.chainId = "0000000000000000000000000000000000000000000000000000000000000000";
+        this.addressPrefix = AddressPrefixType.SRY;
+        this.chainId = "5205c25d3e87cb3e8e527e6fbbf324b7b2b9fe7a7192c604ce5b174d08987324";
         this.steemJWeight = 250;
         this.validationsToSkip = new ArrayList<>();
         this.synchronizationLevel = SynchronizationType.FULL;
